@@ -40,6 +40,13 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/, // for fonts and images
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]'
+                }
             }
         ]
     },
